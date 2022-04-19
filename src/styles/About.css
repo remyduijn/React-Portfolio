@@ -2,6 +2,29 @@ h1 {
     color: #263238;
 }
 
+h3 {
+    color: #263238;
+    margin-top: 2rem;
+}
+
+p {
+    color: #546e7a;
+    padding-top: 5px;
+}
+
+/* img {
+    margin-top: -3.3rem;
+} */
+
+.img-position {
+    position: absolute;
+    margin-top: -2.8rem;
+}
+
+.about-text {
+    margin-left: 4.2rem;
+}
+
 .line {
     width: 192px;
     border-bottom: 3px solid #ffd740;

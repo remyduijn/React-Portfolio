@@ -15,6 +15,6 @@ div.masthead {
     background: url("../images/remy-small.jpg");
 }} */
 
-@media (min-width:2560px) {div.masthead {
+@media (min-width:1457px) {div.masthead {
     background-size: cover;
 }}
