@@ -1,53 +1,109 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import '../../styles/Navbar.css'
-import {Nav, NavLink, Bars, NavMenu} from './NavbarElements'
+import { FaBars } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll } from 'react-scroll';
+import { 
+  MobileIcon,
+  Nav,
+  NavbarContainer,
+  NavItem,
+  NavLinks,
+  NavLogo,
+  NavMenu,
+  NavBtn,
+  NavBtnLink
+} from './NavbarElements';
 
-const Navbar = ({toggle}) => {
-  return ( 
+const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
+  return (
     <>
-    <Nav>
-        <NavLink to="/Home">
-            <div id='logo-small'>RD</div>
-            <div id="logo-wide">Remy Duijn</div>
-        </NavLink>  
-        <Bars onClick={toggle} />
-        <NavMenu>
-            <NavLink to="/about" activestyle>
-              About
-            </NavLink>
-            <NavLink to="/portfolio" activestyle>
-              Portfolio
-            </NavLink>
-            <NavLink to="/contact" activestyle>
-              Contact
-            </NavLink>
-        </NavMenu>
-    </Nav> 
-
-    {/* <Nav>
-        <NavbarContainer>
-            <NavLogo to="/Home">Remy Duijn</NavLogo>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        <Nav scrollNav={scrollNav}>
+          <NavbarContainer>
+            <NavLogo onClick={toggleHome} to='/'>
+              <div id='logo-small'>RD</div>
+              <div id="logo-wide">Remy Duijn</div>
+            </NavLogo>
             <MobileIcon onClick={toggle}>
-                <FaBars />
+              <FaBars />
             </MobileIcon>
             <NavMenu>
-            <NavItem>
-              <NavLinks to='/about'>About</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to='/portfolio'>Portfolio</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to='/contact'>Contact</NavLinks>
-            </NavItem>
+              <NavItem>
+                <NavLinks
+                  to='about'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                >
+                  About
+                </NavLinks>
+              </NavItem>
+              {/* <NavItem>
+                <NavLinks
+                  to='discover'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                >
+                  Discover
+                </NavLinks>
+              </NavItem> */}
+              <NavItem>
+                <NavLinks
+                  to='portfolio'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                >
+                  Portfolio
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to='resume'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                >
+                  Resume
+                </NavLinks>
+              </NavItem>
             </NavMenu>
-        </NavbarContainer>
-    </Nav> */}
+            <NavBtn>
+              <NavBtnLink to='/contact'>Contact Me</NavBtnLink>
+            </NavBtn>
+          </NavbarContainer>
+        </Nav>
+      </IconContext.Provider>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
-
-
-     
+export default Navbar;

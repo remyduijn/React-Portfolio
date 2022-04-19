@@ -1,10 +1,11 @@
 #logo-small {
     display: none;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 @media (max-width: 425px){#logo-small {
     display: block;
-    border: 1px solid #263238 !important;
+    border: 1px solid #fff !important;
     border-radius: 50%;
     padding-left: 5px;
     padding-right: 5px;
@@ -14,6 +15,7 @@
 
 #logo-wide {
     display: block;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 @media (max-width: 425px){#logo-wide {
