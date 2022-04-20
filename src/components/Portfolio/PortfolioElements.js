@@ -6,16 +6,9 @@ export const PortfolioContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // background: #ffd740;
-
-  // background: #fff;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // padding: 0 30px;
-  // height: 800px;
   position: relative;
   z-index: 1;
+  padding-bottom: 2rem;
 
   :before {
     content: '';
@@ -32,23 +25,17 @@ export const PortfolioContainer = styled.div`
       // linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
   }
-
-
  
   @media screen and (max-width: 768px) {
-    height: 1100px;
-  }
-  
-  @media screen and (max-width: 480px) {
     height: 1300px;
   }
   `;
   
 export const PortfolioWrapper = styled.div`
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 16px;
   padding: 0 50px;

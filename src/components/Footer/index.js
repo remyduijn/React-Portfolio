@@ -72,21 +72,16 @@ const Footer = () => {
             </SocialLogo>
             <WebsiteRights>Remy Duijn © 2022 All rights reserved.</WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href='/' target='_blank' aria-label='Linkedin'>
+              <SocialIconLink href='https://www.linkedin.com/in/remy-duijn-00827036/' target='_blank' aria-label='Linkedin' rel='noopener noreferrer'>
                 <FaLinkedin />
               </SocialIconLink>
-              <SocialIconLink
-                href='/'
-                target='_blank'
-                aria-label='Youtube'
-                rel='noopener noreferrer'
-              >
+              <SocialIconLink href='https://github.com/remyduijn' target='_blank' aria-label='Github' rel='noopener noreferrer'>
                 <FaGithub />
               </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
+              <SocialIconLink href='https://www.instagram.com/remyduijn/?hl=en' target='_blank' aria-label='Instagram' rel='noopener noreferrer'>
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+              <SocialIconLink href='https://www.facebook.com/remy.duijn/' target='_blank' aria-label='Facebook' rel='noopener noreferrer'>
                 <FaFacebook />
               </SocialIconLink>
 

@@ -3,6 +3,7 @@ import '../../styles/Portfolio.css'
 import Icon1 from '../../images/svg-2.svg';
 import Icon2 from '../../images/svg-7.svg';
 import Icon3 from '../../images/svg-5.svg';
+import Icon4 from '../../images/svg-6.svg';
 import {
   PortfolioContainer,
   PortfolioH1,
@@ -44,6 +45,16 @@ const Portfolio = () => {
             Luxury real estate portfolio website
           </PortfolioP>
         </PortfolioCard></a>
+
+        <a href='' target="_blank" rel="noopener noreferrer">
+        <PortfolioCard>
+          <PortfolioIcon src={Icon4} />
+          <PortfolioH2>New</PortfolioH2>
+          <PortfolioP>
+            text
+          </PortfolioP>
+        </PortfolioCard></a>
+
       </PortfolioWrapper>
     </PortfolioContainer>
   );
