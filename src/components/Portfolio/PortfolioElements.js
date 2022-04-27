@@ -26,8 +26,12 @@ export const PortfolioContainer = styled.div`
     z-index: 2;
   }
  
+  
   @media screen and (max-width: 768px) {
     height: 1300px;
+  }
+  @media screen and (max-width: 425px) {
+    height: 1240px;
   }
   `;
   
@@ -35,7 +39,7 @@ export const PortfolioWrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 16px;
   padding: 0 50px;
@@ -59,6 +63,8 @@ export const PortfolioCard = styled.div`
   align-items: center;
   border-radius: 10px;
   max-height: 340px;
+  max-width: 335px;
+  min-height: 286px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
@@ -68,20 +74,33 @@ export const PortfolioCard = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 768px) {
+    max-width: 400px;
+    min-height: 0;  
+  }
 `;
 
 export const PortfolioIcon1 = styled.img`
   height: 160px;
-  width: 160px;
-  padding-bottom: 18px;
-  padding-top: 12px;
-  margin-bottom: 10px;
+  width: 200px;
+  padding-top: 10px;
+`;
+
+export const PortfolioIcon2 = styled.img`
+  height: 160px;
+  width: 140px;
+  padding-top: 10px;
 `;
 
 export const PortfolioIcon = styled.img`
-  height: 160px;
-  width: 160px;
-  margin-bottom: 10px;
+  height: 170px;
+  width: 200px;
+
+  @media (min-width: 1000px) {
+    height: 190px;
+    width: 210px;
+  }
 `;
 
 export const PortfolioH1 = styled.h1`

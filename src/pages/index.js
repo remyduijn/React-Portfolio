@@ -3,12 +3,10 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
-import InfoSection from '../components/InfoSection';
-import {
-  homeObjOne,
-  homeObjTwo,
-  homeObjThree
-} from '../components/InfoSection/Data';
+import AboutSection from '../components/AboutSection';
+import ResumeSection from '../components/ResumeSection';
+import {homeObjOne} from '../components/AboutSection/Data';
+// import {homeObjTwo} from '../components/ResumeSection/Data';
 import Portfolio from '../components/Portfolio';
 
 function Home() {
@@ -22,10 +20,9 @@ function Home() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <InfoSection {...homeObjOne} />
-      {/* <InfoSection {...homeObjTwo} /> */}
+      <AboutSection {...homeObjOne} />
       <Portfolio />
-      <InfoSection {...homeObjThree} />
+      <ResumeSection />
       <Footer />
     </>
   );

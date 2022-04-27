@@ -37,6 +37,10 @@ export const Icon = styled(Link)`
     margin-left: 16px;
     margin-top: 8px;
   }
+
+  @media screen and (max-width: 425px) {
+    font-size: 28px;
+  }
 `;
 
 export const FormContent = styled.div`
@@ -68,11 +72,21 @@ export const Form = styled.form`
 `;
 
 export const FormH1 = styled.h1`
-  margin-bottom: 40px;
+  margin-bottom: 0;
   color: #fff;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   text-align: center;
+`;
+
+export const FormH3 = styled.h3`
+  margin-top: 15px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 22px;
 `;
 
 export const FormLabel = styled.label`
@@ -88,16 +102,6 @@ export const FormInput = styled.input`
   border-radius: 4px;
 `;
 
-// export const MessageInput = styled.input`
-//   padding: 32px 16px;
-//   // padding-top: 16px
-//   // padding-bottom: 16px
-//   margin-bottom: 32px;
-//   hight: 40px
-//   border: none;
-//   border-radius: 4px;
-// `;
-
 export const FormButton = styled.button`
   background: #546e7a;
   padding: 16px 0;
@@ -107,15 +111,7 @@ export const FormButton = styled.button`
   font-size: 20px;
   cursor: pointer;
 
-  // &:hover {
-  //   transition: all 0.2s ease-in-out;
-  //   background: #f5f5f5;
-  //   color: #010606;
-  // }
-`;
-export const Text = styled.span`
-  text-align: center;
-  margin-top: 24px;
-  color: #fff;
-  font-size: 14px;
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;

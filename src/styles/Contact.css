@@ -24,7 +24,6 @@ textarea {
   max-width: 335px;  
 }}
 
-/* @media only screen and (min-width: 320px) and (max-width: 375px){textarea {
-  min-width: 265px;
-  max-width: 265px;  
-}} */
+.email {
+  color: rgba(255, 215, 64, 1);
+}

@@ -11,10 +11,14 @@ div.masthead {
     /* height: 100vh;  */
 }
 
-/* @media (max-width:768px) {div.masthead {
-    background: url("../images/remy-small.jpg");
-}} */
-
 @media (min-width:1457px) {div.masthead {
     background-size: cover;
+}}
+
+@media (max-width:425px) {div.masthead {
+    background: url("../images/remy-small copy 2.jpg");
+    /* width: 100%;
+    height: 100%; */
+    background-size: cover;
+    padding-right: 8rem;
 }}
