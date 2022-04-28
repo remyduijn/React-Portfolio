@@ -1,12 +1,10 @@
 import React from 'react';
 import '../../styles/About.css'
-import { Button } from '../ButtonElements';
 import img1 from '../../images/svg-4.svg';
 import img2 from '../../images/browser.png';
 import img3 from '../../images/laptop.png';
 import img4 from '../../images/cloud.png';
 import img5 from '../../images/diagram.png';
-import img6 from '../../images/diagram.png';
 
 import {
   InfoContainer,
@@ -18,7 +16,6 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
   ImgWrap,
   Img
 } from './AboutElements';
@@ -30,14 +27,10 @@ const AboutSection = ({
   lightText,
   headline,
   description,
-  buttonLabel,
-  img,
   alt,
   id,
   primary,
   darkText,
-  dark,
-  dark2
 }) => {
   console.log(primary); 
   return ( 
@@ -74,22 +67,6 @@ const AboutSection = ({
                   <p>I manage application deployment, put project on servers and design technical architecture using UML diagrams.</p>
                 </div>
                 <img class="img-position" src={img5} alt="" width="45" height="45"></img>
-
-                {/* <BtnWrap>
-                  <Button
-                    to='home'
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
-                </BtnWrap> */}
               </TextWrapper>
             </Column1>
             <Column2>

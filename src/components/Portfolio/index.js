@@ -2,8 +2,7 @@ import React from 'react';
 import '../../styles/Portfolio.css'
 import Icon1 from '../../images/travel.svg';
 import Icon2 from '../../images/diet.svg';
-import Icon3 from '../../images/svg-5.svg';
-import Icon4 from '../../images/movie.svg';
+import Icon3 from '../../images/movie.svg';
 import {
   PortfolioContainer,
   PortfolioH1,
@@ -24,7 +23,7 @@ const Portfolio = () => {
       <PortfolioWrapper>
         <a href='https://remyduijn.github.io/Watch-it-Outside/' target="_blank" rel="noopener noreferrer">
         <PortfolioCard>
-          <PortfolioIcon1 src={Icon4} />
+          <PortfolioIcon1 src={Icon3} />
           <PortfolioH2>Watch it Outside</PortfolioH2>
           <PortfolioP>
             A registration website for a film festival.
@@ -54,8 +53,6 @@ const Portfolio = () => {
             A web program that calculates nutritional needs.
           </PortfolioP>
         </PortfolioCard></a>
-
-
       </PortfolioWrapper>
     </PortfolioContainer>
   );

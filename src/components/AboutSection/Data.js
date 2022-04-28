@@ -10,31 +10,13 @@ export const homeObjOne = {
   // buttonLabel: 'Get Started',
   imgStart: false,
   img: require('../../images/svg-4.svg'),
-  // alt: 'Car', 
+  // alt: 'Desk', 
   // dark: false,
   // primary: true,
   darkText: true
 };
 
 // export const homeObjTwo = {
-//   id: 'resume',
-//   lightBg: true,
-//   lightText: false,
-//   // lightTextDesc: false,
-//   topLine: 'Unlimited Access',
-//   headline: 'Login to your account at any time',
-//   description:
-//     'We have you covered no matter where you are located. All you need is an internet connection and a phone or computer.',
-//   buttonLabel: 'Learn More',
-//   imgStart: true,
-//   img: require('../../images/svg-2.svg'),
-//   alt: 'Piggybank',
-//   dark: false,
-//   primary: false,
-//   darkText: true
-// };
-
-// export const homeObjThree = {
 //   id: 'resume',
 //   lightBg: true,
 //   lightText: false,
@@ -46,7 +28,7 @@ export const homeObjOne = {
 //   buttonLabel: 'Start Now',
 //   imgStart: false,
 //   img: require('../../images/svg-3.svg'),
-//   alt: 'Papers',
+//   alt: 'Present',
 //   dark: false,
 //   primary: false,
 //   darkText: true
