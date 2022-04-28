@@ -6,7 +6,6 @@ import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import ResumeSection from '../components/ResumeSection';
 import {homeObjOne} from '../components/AboutSection/Data';
-// import {homeObjTwo} from '../components/ResumeSection/Data';
 import Portfolio from '../components/Portfolio';
 
 function Home() {

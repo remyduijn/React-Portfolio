@@ -37,7 +37,7 @@ const AboutSection = () => {
                     <Button>Download Resume</Button>
                   </a>
                   <a href='/Contact'>
-                    <Button2>Contact Me</Button2>
+                    <Button2>Contact Me</Button2> 
                   </a>
                 </BtnWrap>
               </TextWrapper>
